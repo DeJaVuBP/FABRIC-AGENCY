@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm Nhà Cung Cấp Mới</title>
+    <link rel="stylesheet" href="./static/css/addInfoSupplier.css" />
+    <script type="module" src="./static/js/addInfoSuplierJs.js"></script>
+  </head>
+
+  <body>
+    <div class="addBGPic">
+      <div class="row addInfo">
+        <div class="container addInfo__form">
+          <div class="row group-row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 text-center">
+                  <div class="row group-row">
+                    <span class="col-5 text-center"><strong>Tên</strong></span>
+                    <input
+                      class="input_field"
+                      id="input_name"
+                      placeholder="Nhập Tên" />
+                  </div>
+                  <div class="row group-row">
+                    <span class="col-5 text-center"
+                      ><strong>Địa chỉ</strong></span
+                    >
+                    <input
+                      class="input_field"
+                      id="input_address"
+                      placeholder="Nhập Địa Chỉ" />
+                  </div>
+                  <div class="row group-row">
+                    <span class="col-5 text-center"
+                      ><strong>Mã Tax</strong></span
+                    >
+                    <input
+                      class="input_field"
+                      id="input_tax"
+                      placeholder="Nhập Mã Tax" />
+                  </div>
+                  <div class="row group-row">
+                    <span class="col-5 text-center"
+                      ><strong>Tài khoản Ngân Hàng</strong></span
+                    >
+                    <input
+                      class="input_field"
+                      id="input_account"
+                      placeholder="Nhập Tài Khoản Ngân Hàng" />
+                  </div>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="group-row">
+                    <div id="registerSupplier-schedule_container"></div>
+                    <button
+                      id="schedule_add_btn"
+                      class="schedule_add_btn"
+                      style="border: unset">
+                      <span class="lang schedule_add_label"
+                        >Thêm số điện thoại mới</span
+                      ><i
+                        class="fa fa-plus schedule_add_icon"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row group-row">
+            <div class="col text-center">
+              <button
+                type="submit"
+                id="registerSupplier-submit-btn"
+                class="registerSupplier-submit-btn lang"
+                style="border: unset">
+                Thêm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

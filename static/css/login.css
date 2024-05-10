@@ -1,0 +1,63 @@
+#coverLogin,
+#coverLogin * {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#Login_Content {
+  background-image: linear-gradient(to right, white, whitesmoke, wheat);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid wheat;
+}
+
+#LoginForm {
+  background-color: wheat;
+  padding: 50px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+#LoginForm > p {
+  color: black;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.Login_userName_passWord > div {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+#LoginForm .Login_userName_passWord > input {
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 285px;
+  padding: 10px;
+}
+
+#LoginForm > .Login_userName_passWord {
+  padding: 15px;
+}
+
+#Login_Btn_Submit {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  background-color: whitesmoke;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+}
+
+#Login_Btn_Submit_div {
+  text-align: center;
+  padding: 15px;
+}

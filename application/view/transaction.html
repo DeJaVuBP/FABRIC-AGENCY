@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập vải</title>
+
+    <link rel="stylesheet" href="./static/css/transaction.css" />
+    <!-- CSS Library -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script type="module" src="./static/js/transaction.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="container shadow"
+      style="
+        padding: 2rem;
+        border-radius: 20px;
+        border: 2px solid black;
+        margin-top: 2rem;
+        background-color: wheat;
+      ">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-lg-12">
+                Ngày Bắt Đầu
+                <div class="form-group form-distance">
+                  <input id="edit_start" type="date" class="form-control" />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                Ngày Kết Thúc
+                <div class="form-group form-distance">
+                  <input id="edit_end" type="date" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label for="exampleDropdown" style="padding-bottom: 8px"
+              >Loại
+            </label>
+            <select class="form-control" id="catFilter">
+              <option value="-1">--Tất Cả--</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label for="exampleDropdown" style="padding-bottom: 8px"
+              >Nhà Cung Cấp</label
+            >
+            <select class="form-control" id="supFilter">
+              <option value="-1">--Tất Cả--</option>
+            </select>
+          </div>
+        </div>
+        <input
+          style="
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            border: 2px solid black;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 100px;
+          "
+          type="button"
+          value="Tìm"
+          id="submit" />
+      </div>
+    </div>
+    <div
+      class="container shadow"
+      style="
+        padding: 1rem;
+        border-radius: 20px;
+        border: 2px solid black;
+        margin-top: 2rem;
+        background-color: wheat;
+      ">
+      <div class="row">
+        <div class="col-lg-12 containerCategory">
+          <h1>Giao Dịch Nhập Vải</h1>
+          <br />
+          <div id="table_supplier"></div>
+          <br />
+          <table class="style_table" border="1" id="transaction_table">
+            <tr>
+              <th style="width: 20%">Tên Loại Vải</th>
+              <th style="width: 15%">Ngày</th>
+              <th style="width: 15%">Giá Mua</th>
+              <th style="width: 15%">Số Lượng</th>
+              <th style="width: 35%">Nhà Cung Cấp</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
